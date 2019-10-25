@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.videoencrypter.vos.VideoPreviewVO" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_medium">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageViewHolder"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/previewIv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@color/grey"
+                tools:src="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/videoNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toEndOf="@id/imageViewHolder"
+            android:text="@{data.videoName}"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/SP_XL_size"
+            tools:text="Aquaman(2018)" />
+
+        <TextView
+            android:id="@+id/createdAtTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/videoNameTv"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toEndOf="@id/imageViewHolder"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/SP_N_size"
+            tools:text="10/10/2018 :: 9:50pm" />
+
+        <TextView
+            android:id="@+id/encryptedStatusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+
+            android:layout_below="@id/createdAtTv"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toEndOf="@id/imageViewHolder"
+            android:background="@drawable/tag_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/SP_S_size"
+            tools:text="Encrypted" />
+
+        <TextView
+            android:id="@+id/sizeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/createdAtTv"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toEndOf="@id/encryptedStatusTv"
+            android:background="@drawable/tag_bg"
+            android:gravity="center"
+            android:text="@{data.dateCreatedAt}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/SP_S_size"
+            tools:text="Encrypted" />
+
+        <TextView
+            android:id="@+id/encryptedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewHolder"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/button_bg"
+            android:drawableStart="@drawable/ic_locked"
+            android:drawablePadding="@dimen/margin_small"
+            android:gravity="center"
+
+            android:padding="@dimen/margin_small"
+            android:text="Encrypt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/SP_N_size" />
+
+    </RelativeLayout>
+
+</layout>

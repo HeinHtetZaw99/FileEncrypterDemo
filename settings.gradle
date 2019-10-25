@@ -1,0 +1,2 @@
+include ':app', ':Appcore', ':buildSrc', ':buildsrc', ':buildSrc', ':appcore', ':appbase', ':FileEncrypter', ':encrypter'
+rootProject.name='VideoEncrypter'

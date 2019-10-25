@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daniel.appbase.components.EmptyLoadingViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/loadingRootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="footer_loader.json"
+            app:lottie_loop="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/emptyIv"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_view" />
+
+        <TextView
+            android:id="@+id/emptyTv"
+            style="@style/BoldXL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.3"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/title_msg_emptyView"
+            android:textColor="@color/error" />
+
+        <TextView
+            android:id="@+id/pullToRefreshTv"
+            style="@style/RegularN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin_medium"
+            android:lineSpacingMultiplier="1.3"
+            android:text="@string/title_msg_try_again"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/pullToRefreshBtn"
+            style="@style/RegularXL"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="@string/btn_txt_emptyView"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingEnd="@dimen/margin_small"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DP_N_size" />
+
+    </LinearLayout>
+</com.daniel.appbase.components.EmptyLoadingViewPod>

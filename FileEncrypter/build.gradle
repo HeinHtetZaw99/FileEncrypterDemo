@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation Kotlin.stdblib_jdk
+    implementation AndroidXAppCompat.app_compat
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

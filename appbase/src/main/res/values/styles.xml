@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Text Styles comes here-->
+
+
+    <style name="BoldXS">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/SP_XS_size</item>
+    </style>
+
+    <style name="BoldN">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/SP_N_size</item>
+    </style>
+
+    <style name="BoldXL">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/SP_XL_size</item>
+    </style>
+
+    <style name="RegularS">
+        <item name="android:fontFamily">@font/mark_pro_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/SP_S_size</item>
+    </style>
+
+    <style name="RegularXS">
+        <item name="android:fontFamily">@font/mark_pro_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/SP_XS_size</item>
+    </style>
+
+
+    <style name="RegularN">
+        <item name="android:fontFamily">@font/mark_pro_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/SP_N_size</item>
+    </style>
+
+    <style name="RegularL">
+        <item name="android:fontFamily">@font/mark_pro_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/SP_L_size</item>
+    </style>
+
+    <style name="RegularXL">
+        <item name="android:fontFamily">@font/mark_pro_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/SP_XL_size</item>
+    </style>
+
+    <style name="FiraSansRegularL">
+        <item name="android:fontFamily">@font/fira_sans_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/SP_L_size</item>
+    </style>
+
+    <style name="FiraSansLightL">
+        <item name="android:fontFamily">@font/fira_sans_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/SP_L_size</item>
+    </style>
+
+    <style name="FiraSansRegular">
+        <item name="android:fontFamily">@font/fira_sans_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/SP_N_size</item>
+    </style>
+
+
+    <style name="BookNStyle">
+        <item name="android:fontFamily">@font/mark_pro_book</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/SP_N_size</item>
+    </style>
+
+    <style name="BookBoldNStyle">
+        <item name="android:fontFamily">@font/mark_pro_book</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/SP_N_size</item>
+    </style>
+
+    <style name="BookXLStyle">
+        <item name="android:fontFamily">@font/mark_pro_book</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/SP_XL_size</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textAppearance">@style/RegularL</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+
+    <!--Text Styles Ended-->
+
+</resources>
